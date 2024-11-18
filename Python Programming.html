@@ -9323,33 +9323,6 @@ Name: Horsepower, dtype: float64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Sample DataFrame</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-    <span class="s2">"Department"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"HR"</span><span class="p">,</span> <span class="s2">"IT"</span><span class="p">,</span> <span class="s2">"HR"</span><span class="p">,</span> <span class="s2">"IT"</span><span class="p">,</span> <span class="s2">"Finance"</span><span class="p">],</span>
-    <span class="s2">"Employee"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="s2">"Bob"</span><span class="p">,</span> <span class="s2">"Charlie"</span><span class="p">,</span> <span class="s2">"David"</span><span class="p">,</span> <span class="s2">"Eve"</span><span class="p">],</span>
-    <span class="s2">"Salary"</span><span class="p">:</span> <span class="p">[</span><span class="mi">60000</span><span class="p">,</span> <span class="mi">75000</span><span class="p">,</span> <span class="mi">62000</span><span class="p">,</span> <span class="mi">77000</span><span class="p">,</span> <span class="mi">80000</span><span class="p">]</span>
-<span class="p">})</span>
-
-<span class="c1"># Pivot Table</span>
-<span class="n">pivot_table</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="s2">"Salary"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="s2">"Department"</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s2">"mean"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Pivot Table:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">pivot_table</span><span class="p">)</span>
-
-<span class="c1"># Grouping</span>
-<span class="n">grouped</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"Department"</span><span class="p">)[</span><span class="s2">"Salary"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Grouped Data (Sum of Salaries):</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">grouped</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div>
 </main>
 </body>
